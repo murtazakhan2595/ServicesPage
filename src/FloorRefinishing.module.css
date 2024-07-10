@@ -1,0 +1,448 @@
+.mainContainer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.shrinkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.heroSection {
+  position: relative;
+  min-height: 527px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroContent {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 60px;
+}
+
+.heroTextContainer {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  margin: 199px 0 44px;
+}
+
+.heroTitle {
+  color: #fff;
+  font: 600 51px Poppins, sans-serif;
+}
+
+.heroSubtitle {
+  align-self: center;
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.heroSubtitle span {
+  color: #fff;
+  font-family: Lexend, sans-serif;
+}
+
+/* .divider {
+  aspect-ratio: 0.5;
+  object-fit: auto;
+  object-position: center;
+  width: 5px;
+  fill: #fff;
+  stroke-width: 1.5px;
+  stroke: #fff;
+  border: 2px solid #fff;
+  margin: auto 0;
+} */
+
+.highlight {
+  color: #d7051d !important;
+}
+
+.servicesSection {
+  display: flex;
+  width: 100%;
+  max-width: 966px;
+  margin: 138px auto 0;
+  gap: 20px;
+}
+
+.servicesContainer {
+  width: 40%;
+}
+
+.servicesHeader {
+  display: flex;
+  font-size: 28px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.servicesTitle {
+  font-family: Lexend, sans-serif;
+  flex-grow: 1;
+  text-wrap: nowrap;
+}
+
+.serviceDivider {
+  background-color: #d7051d;
+  margin-top: 43px;
+  /* width: 55px; */
+  width: 100%;
+  height: 4px;
+}
+
+.servicesList {
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  display: flex;
+  margin-top: 28px;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 40px 30px;
+}
+
+.service{
+  cursor: pointer;
+}
+
+.service:hover {
+  cursor: pointer;
+  justify-content: center;
+    border-radius: 14px;
+    background-color: #d7051d;
+    opacity: 0.6;
+    color: #fff;
+    padding: 9px 19px;
+}
+
+.service,
+.activeService {
+  font-family: Poppins, sans-serif;
+  margin-top: 22px;
+}
+
+.activeService {
+  justify-content: center;
+  border-radius: 14px;
+  background-color: #d7051d;
+  color: #fff;
+  padding: 9px 19px;
+}
+
+.servicesDescription {
+  width: 60%;
+  padding: 0 20px;
+}
+
+.descriptionTitle {
+  font: 600 24px Lexend, sans-serif;
+}
+
+.descriptionText {
+  margin-top: 25px;
+  font: 300 16px/38px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+.approchCardParent{
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+
+.approachSection {
+  background-color: #f3f3f3;
+  margin-top: 83px;
+  width: 100%;
+  display: flex;
+}
+
+.approachBackground {
+  width: 35%;
+  position: relative;
+  min-height: 496px;
+  max-height: 496px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.approachBackgroundImage {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.approachContent {
+  position: relative ;
+  display: flex;
+  margin-top: 42px;
+  width: 301px;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.approachTitle {
+  font: 700 42px/55px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.approachDescription {
+  margin-top: 38px;
+  font: 400 18px Lexend, sans-serif;
+}
+.approachCardsContainer{
+  position: absolute ;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -75px;
+}
+
+.approachCards {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.approachCard {
+  border-radius: 14px;
+  box-shadow: 0px 3.591px 3.591px 0px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.approachCardImage {
+  width: 86px;
+  height: 86px;
+  object-fit: contain;
+}
+
+.approachCardTitle {
+  color: #000;
+  font: 500 13px Lexend, sans-serif;
+  margin-top: 14px;
+}
+
+.approachCardDescription {
+  color: #757474;
+  font: 400 10px Lexend, sans-serif;
+  margin-top: 19px;
+}
+
+.tilingOptionsSection {
+  display: flex;
+  margin-top: 150px;
+  gap: 20px;
+  max-width: 957px;
+}
+
+.tilingImage {
+  width: 50%;
+  aspect-ratio: 1.1;
+  object-fit: cover;
+}
+
+.tilingContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.tilingTitle {
+  font: 600 24px Lexend, sans-serif;
+  color: #000;
+}
+
+.tilingDescription {
+  font: 300 16px/38px Poppins, sans-serif;
+  color: #000;
+  margin-top: 25px;
+}
+
+.callToActionButton {
+  justify-content: center;
+  border-radius: 14px;
+  background-color: #d7051d;
+  align-self: start;
+  margin-top: 43px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  padding: 9px 36px;
+  border: none;
+  cursor: pointer;
+}
+
+.ceramicSection {
+  margin-top: 86px;
+  max-width: 957px;
+}
+.ceramicContainer{
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+
+
+.ceramicImage {
+  width: 161px;
+  aspect-ratio: 1.05;
+  object-fit: contain;
+}
+
+
+.ceramicTitle {
+  font: 600 24px Lexend, sans-serif;
+  color: #000;
+}
+
+.ceramicDescription {
+  margin-top: 19px;
+  font: 300 16px/38px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+  color: #000;
+}
+
+.statusSection {
+  background-color: #f3f3f3;
+  margin-top: 131px;
+  width: 100%;
+  display: flex;
+}
+
+.statusTitle {
+  color: #d7051d;
+  font: 600 58px Lexend, sans-serif;
+  width: 27%;
+  display: flex;
+  align-items: center;
+}
+
+.statusItems {
+  width: 73%;
+  display: flex;
+}
+
+.statusItem {
+  background-color: #141414;
+  display: flex;
+  gap: 15px;
+  color: #fff;
+  padding: 50px;
+  border-right: 1px solid #fff;
+  flex: 1;
+}
+
+.statusIcon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.statusContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.statusNumber {
+  font: 600 29px Lexend, sans-serif;
+}
+
+.statusLabel {
+  margin-top: 9px;
+  font: 500 15px Lexend, sans-serif;
+}
+
+.ctaSection {
+  position: relative;
+  min-height: 469px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.ctaBackground {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ctaContent {
+  position: relative;
+  text-align: center;
+  padding: 80px 60px;
+}
+
+.ctaTitle {
+  font: 700 48px/290% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.ctaButton {
+  justify-content: center;
+  border-radius: 14px;
+  background-color: #d7051d;
+  color: #fff;
+  margin-top: 43px;
+  padding: 10px 45px;
+  font: 500 18px/43px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.logistics{
+  margin-top: 131px;
+  max-width: 957px;
+}
+
+.logisticsTitle {
+  font-size: 24;
+  font-family: Lexend, sans-serif;
+  font-weight: 600;
+  word-wrap: 'break-word';
+  margin-bottom: 18px;
+}
+.logisticsDescription{
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    line-height: 46.40px;
+    word-wrap: break-word;
+}
